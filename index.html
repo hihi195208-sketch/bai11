@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:#f4f6ff;
+            margin:0;
+            padding:20px;
+            line-height:1.6;
+        }
+
+        h1, h2, h3 {
+            color:#2f4c9c;
+            margin-top:25px;
+        }
+
+        .card {
+            background:white;
+            padding:18px;
+            border-radius:14px;
+            margin-top: 25px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        pre {
+            background:#eef2ff;
+            padding:14px;
+            border-radius:10px;
+            white-space:pre-wrap;
+            font-family: Consolas, monospace;
+        }
+
+        .boxed {
+            border:2px solid #2f5bb7;
+            padding:14px;
+            border-radius:10px;
+            background:#f8fbff;
+            font-family: Consolas, monospace;
+            white-space:pre-wrap;
+        }
+
+        img {
+            max-width:100%;
+            margin-top:12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bài 8</h1>
+
+    <!-- ==================== -->
+    <!--      I. LUYỆN TẬP   -->
+    <!-- ==================== -->
+    <section class="card">
+        <h2>I. Luyện tập</h2>
+
+        <!-- Luyện tập 1 -->
+        <h3>1. Luyện tập 1 – Đề bài</h3>
+        <p>Cho ảnh có kích thước gốc là <strong>720 × 450 px</strong> và chèn ảnh vào trang web bằng câu lệnh:</p>
+
+        <div class="boxed">
+&lt;img src="images/1.png" alt="chiếc lá" width="600"&gt;
+        </div>
+
+        <p>Hỏi: Ảnh trong trang web sẽ có kích thước bao nhiêu?</p>
+
+        <h3>Bài giải</h3>
+
+        <pre>
+- Thuộc tính width="600" → Ảnh hiển thị với chiều rộng là 600 px.
+- Chiều cao không chỉ định → trình duyệt tự tính theo tỉ lệ gốc.
+
+Tỉ lệ ảnh gốc: 720 × 450
+
+Chiều cao hiển thị = (450 / 720) × 600 = 375 px
+
+➡️ Ảnh hiển thị: **600 px (rộng) × 375 px (cao)**
+        </pre>
+
+
+        <!-- Luyện tập 2 -->
+        <h3>2. Luyện tập 2 – Đề bài</h3>
+        <p>Chèn thêm một số ảnh của em vào trang web giới thiệu bản thân (Bài 10).</p>
+
+        <h3>Bài giải</h3>
+
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Giới thiệu bản thân&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Giới thiệu bản thân&lt;/h1&gt;
+    &lt;p&gt;Xin chào! Tôi là [Tên của bạn], đây là trang web giới thiệu bản thân tôi.&lt;/p&gt;
+
+    &lt;h2&gt;Ảnh của tôi&lt;/h2&gt;
+    &lt;img src="path_to_your_image/image1.jpg" alt="Ảnh của tôi"&gt;
+    &lt;img src="path_to_your_image/image2.jpg" alt="Ảnh của tôi"&gt;
+    &lt;img src="path_to_your_image/image3.jpg" alt="Ảnh của tôi"&gt;
+
+    &lt;h2&gt;Bạn cùng lớp&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend1" target="_blank"&gt;Facebook Bạn 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend2" target="_blank"&gt;Facebook Bạn 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend3" target="_blank"&gt;Facebook Bạn 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+    </section>
+
+
+
+    <!-- ==================== -->
+    <!--       II. VẬN DỤNG   -->
+    <!-- ==================== -->
+    <section class="card">
+        <h2>II. Vận dụng</h2>
+
+        <!-- Vận dụng -->
+        <h3>1. Vận dụng – Đề bài</h3>
+        <p>Tạo một khung nội tuyến và liên kết đến bài hát yêu thích (YouTube) vào trang web giới thiệu bản thân.</p>
+
+        <h3>Bài giải</h3>
+
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Giới thiệu bản thân&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Giới thiệu bản thân&lt;/h1&gt;
+    &lt;p&gt;Xin chào! Tôi là [Tên của bạn], đây là trang web giới thiệu về bản thân.&lt;/p&gt;
+
+    &lt;h2&gt;Bài hát yêu thích của tôi&lt;/h2&gt;
+    &lt;iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/video_id"
+            frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+    &lt;h2&gt;Bạn cùng lớp&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend1" target="_blank"&gt;Facebook Bạn 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend2" target="_blank"&gt;Facebook Bạn 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend3" target="_blank"&gt;Facebook Bạn 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+    </section>
+
+</body>
+</html>
+
+
